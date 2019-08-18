@@ -2,7 +2,7 @@
 Source code and data for CIKM'19 paper "Discovering Hypernymy in Text-Rich Heterogeneous Information Network by Exploiting Context Granularity".
 
 
-===== Deprecate =====
+===== The Following is Deprecated =====
 
 **Folks: please feel free to reuse part of the following description, but please refrain from blindly copy-and-pasting without bulk of text that does not serve our purpose.
 
