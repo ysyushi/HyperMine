@@ -243,34 +243,10 @@ def printEvalResults(criterion):
                 print("1. Precision@(k = %d) = %f" % (k, Evaluation.precision_at_n(sorted_pairs, k)))
         else:
             print("1. Precision@(k = %d) = %f" % (args.k, Evaluation.precision_at_n(sorted_pairs, args.k)))
-        #print("2. Precision@(recall = %f) = %f" % (args.r, Evaluation.precision_at_recall(sorted_pairs, args.r)))
-        #print("3. Precision@(All Nodes Covered) = %f" % evaluator.precision_at_all_nodes_covered(sorted_pairs))
+        
         print()
         print("The following two metrics are grouped on %s" % args.grouping_by)
-        #print("4. Macro (Uniform) Mean Average Rank = %f" % evaluator.calculate_precision_jiaming(sorted_pairs,
-        #                                                                                          grouping_by=args.grouping_by,
-        #                                                                                          strategy="average",
-        #                                                                                          avg_weights="uniform",
-        #                                                                                          inverse=False,
-        #                                                                                         ))
-        #print("5. Micro (Weighted) Mean Average Rank = %f" % evaluator.calculate_precision_jiaming(sorted_pairs,
-        #                                                                                           grouping_by=args.grouping_by,
-        #                                                                                           strategy="average",
-        #                                                                                           avg_weights="weighted",
-        #                                                                                           inverse=False,
-        #                                                                                          ))
-        #print("6. Macro (Uniform) Mean First Rank = %f" % evaluator.calculate_precision_jiaming(sorted_pairs,
-        #                                                                                        grouping_by=args.grouping_by,
-        #                                                                                        strategy="minimum",
-        #                                                                                        avg_weights="uniform",
-        #                                                                                        inverse=False,
-        #                                                                                       ))
-        #print("7. Micro (Weighted) Mean First Rank = %f" % evaluator.calculate_precision_jiaming(sorted_pairs,
-        #                                                                                         grouping_by=args.grouping_by,
-        #                                                                                         strategy="minimum",
-        #                                                                                         avg_weights="weighted",
-        #                                                                                         inverse=False,
-        #                                                                                        ))
+
         print("8. Macro (Uniform) Mean Average Rank (inverse) = %f" % evaluator.calculate_precision_jiaming(sorted_pairs,
                                                                                                   grouping_by=args.grouping_by,
                                                                                                   strategy="average",
@@ -312,11 +288,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     assert os.path.isfile(args.input_file), "Input file not found"
     assert args.criterion in ["parent", "ancestor", "both"], "Criterion must be either ancestor or parent or both (default)"
-
-    print("\n=========================================================")
-    print("Warnings (for Jiaming and Xinwei): ")
-    print("for some of your baselines, exactly one of {parent, ancestor}-mode evaluation is valid, because your algorithm may use the other, which makes the results unreasonably good.")
-    print("=========================================================\n")
     
     if args.criterion == "both":
         printEvalResults("ancestor")
