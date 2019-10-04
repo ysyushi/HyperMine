@@ -1,11 +1,6 @@
 # Discovering Hypernymy in Text-Rich Heterogeneous Information Network by Exploiting Context Granularity
 Source code and data for CIKM'19 paper "Discovering Hypernymy in Text-Rich Heterogeneous Information Network by Exploiting Context Granularity".
 
-
-===== The Following is Deprecated =====
-
-**Folks: please feel free to reuse part of the following description, but please refrain from blindly copy-and-pasting without bulk of text that does not serve our purpose.
-
 ## Weak Supervision I/O Format
 
 **Note: We need to assume phrases in the dictionary are underscore-concatenated (words joined by underscores) to comply with the gensim format to be used, which is not the case for existing data. The following documentation assumes this assumption is true. If Jiaming is building the NN model on top of existing data, please consider this.**
