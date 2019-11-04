@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Nov  5 20:14:54 2018
-
-@author: liyuchen
 """
 
 import heapq

@@ -31,7 +31,7 @@ hypernym_node_name	hyponym_node_name	feature_value
 ```
 where **tabs** are used as separators on each line. We use tabs for better readability. 
 
-An example file can be found at `/data/yushi2/linkedin_maple/maple_github/data/one_example_pair_feature.tsv` on dmserv4 (existing as of Dec. 19, 2018).
+An example file can be found at `/data/yushi2/linkedin_maple/maple_github/data/one_example_pair_feature.tsv` on dmserv4 (existing as of Dec. 19, 2018). Please reach out to us if you would like to obtain a copy.
 
 ### Supervision
 The supervision file provides a list of **positive** hypernym-hyponym pairs. Each line is a record with format
@@ -40,7 +40,7 @@ hypernym_node_name	hyponym_node_name
 ```
 where **tabs** are used as separators.
 
-An example file can be found at `/data/yushi2/linkedin_maple/maple_github/data/example_supervision_from_dblp.tsv` on dmserv4 (existing as of Dec. 19, 2018).
+An example file can be found at `/data/yushi2/linkedin_maple/maple_github/data/example_supervision_from_dblp.tsv` on dmserv4 (existing as of Dec. 19, 2018). Please reach out to us if you would like to obtain a copy.
 
 ### Output Format
 

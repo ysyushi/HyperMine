@@ -1,3 +1,4 @@
+# Modify the all the following file paths to fit your configuration
 class Config:
 	some_path_shared_across_the_project = "path"
 	vocab = "/shared/data/zlou4/linkedin/maple/data/vocabulary_postlink.txt"
